@@ -1,0 +1,269 @@
+	.pt-15 {
+		padding-top: 15px;
+	}
+	.pt-50 {
+		padding-top: 50px;
+	}
+
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* page */
+.page-wrapper {
+    margin: 0 auto;
+    width: 960px;
+    max-width: 100%;
+}
+
+
+/* box */
+.box-content {
+    padding:20px;
+    background-color: #EFEFEF;
+}
+
+
+textarea {
+    background-color:#FAFAFA;
+    border:#EFEFEF solid 1px;
+    color:#333;
+	background-color:#f2f2f2; 
+	outline: none;
+    width:100%;
+	resize: none;
+	height:150px;
+}
+
+.autosize {
+  resize: none;
+  overflow: hidden;
+}
+
+/* richtext custom style */
+.richText {
+    margin-top: 40px;
+    -webkit-box-shadow: 0 0 20px 0 #999;
+    -moz-box-shadow: 0 0 10px 0 #999;
+    box-shadow: 0 0 10px 0 #999;
+}
+
+
+table {
+  background: white;
+  margin-bottom: 1.25rem;
+  border: solid 1px #dddddd; }
+  table caption {
+    background: transparent;
+    color: #222222;
+    font-size: 1rem;
+    font-weight: bold; }
+  table thead {
+    background: whitesmoke; }
+    table thead tr th,
+    table thead tr td {
+      padding: 0.5rem 0.625rem 0.625rem;
+      font-weight: bold;
+      color: #222222; }
+  table tfoot {
+    background: whitesmoke; }
+    table tfoot tr th,
+    table tfoot tr td {
+      padding: 0.5rem 0.625rem 0.625rem;
+      font-size: 0.875rem;
+      font-weight: bold;
+      color: #222222; }
+  table tr th,
+  table tr td {
+    padding: 0.5625rem 0.625rem;
+    color: #222222;
+    text-align: left; }
+  table tr.even, table tr.alt, table tr:nth-of-type(even) {
+    background: #f9f9f9; }
+  table thead tr th,
+  table tfoot tr th,
+  table tfoot tr td,
+  table tbody tr th,
+  table tbody tr td,
+  table tr td {
+    display: table-cell;
+    line-height: 1.125rem; }
+	
+	.panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d8d8d8;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #f2f2f2; }
+  .panel > :first-child {
+    margin-top: 0; }
+
+  .panel.radius {
+    border-radius: 3px; }
+	
+  .center { 
+    text-align: center; 
+  }
+    .centerb { 
+     margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0; 
+  }
+
+.more {
+	display:none;
+}
+
+.num {
+  display: none;
+}
+.paginator {
+  line-height: 150%;
+}
+.paginator > span {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+.paginator_active {
+    background-color: #cbe6f4;
+    color: white;
+    border: 5px solid #4CAF50;
+}
+
+
+/* картинка на странице */
+.minimized {
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+ 
+.minimized:hover {
+  border: 1px solid black;
+}
+ 
+/* увеличенная картинка */
+#magnify {
+  display: none;
+ 
+  /* position: absolute; upd: 24.10.2016 */
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999;
+}
+ 
+#magnify img {
+  width: 100%;
+}
+ 
+/* затемняющий фон */
+#overlay {
+  display: none;
+ 
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+ 
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+ 
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+ 
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+ 
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+ 
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.glyphicon-lg
+{
+    font-size:4em
+}
+.info-block
+{
+    border-right:1px solid;margin-bottom:25px
+}
+.info-block .square-box
+{
+    width:160px;min-height:220px;margin-right:10px;text-align:center!important;padding:0px 0
+}
+.info-block.block-info
+{
+    border-color:#ffffff
+}
+.info-block.block-info .square-box
+{
+   
+}
+
+
+
+
+$BorderColor: #cccccc !global;
+
+.container {
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.list {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+.list--list-item {
+    padding-bottom:20px;
+    margin-bottom:20px;
+    border-bottom:1px solid $BorderColor;
+    
+    &:last-child {
+        border-bottom:0;
+        margin:0;
+    }
+}
+.no-result {
+    display:none;
+}
+#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+	text-align:center;
+   }
