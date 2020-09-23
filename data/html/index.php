@@ -51,7 +51,7 @@
                     <div class="square-box pull-left">
                         <span> <a href="<?php echo PAGELINK_CONTACTSVIEW; ?>?i=<?php echo urlencode($contact["contact_id"]); ?>"><img width="160" height="160" class="img-responsive" src='<?php echo $contact["photo"] ?>'></a>   </span>
                     </div>
-                    <p class="name">Name: <b><a href="<?php echo PAGELINK_CONTACTSVIEW; ?>?i=<?php echo urlencode($contact["contact_id"]); ?>"><?php echo htmlentities($contacts->full_name($contact["last_name"], $contact["first_name"], $contact["middle_name"])); ?></a></b></p>
+                    <p class="name">Name: <b><a href="<?php echo PAGELINK_CONTACTSVIEW; ?>?i=<?php echo urlencode($contact["contact_id"]); ?>"><?php echo htmlentities($contacts->full_name($contact["first_name"], $contact["last_name"], $contact["middle_name"])); ?></a></b></p>
                     <h5 class="gender">Gender: <?php echo htmlentities($contact["gender"]); ?></h5>
 					<h5 class="born">Birthday: <?php echo preg_replace($pattern, $replacement, $contact["date_of_birth"]); ?></h5>
 					<h5 class="city">City: <?php echo htmlentities($contact["city"]); ?></h5>
