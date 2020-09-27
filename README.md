@@ -3,6 +3,7 @@
 Address book of people and organisations (database)
 - PHP, jQuery, MySQL and HTML 
 - Login, changing and adding data
+- Search in the database, and the pagination
 
 ## Screenshots
 
