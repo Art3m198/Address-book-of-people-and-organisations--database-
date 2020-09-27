@@ -2,8 +2,10 @@
 
 Address book of people and organisations (database)
 - PHP, jQuery, MySQL and HTML 
-- Login, changing and adding data
-- Search in the database, and the pagination
+- Login, changing and adding data  
+- Search in the database, and the pagination 
+
+[Search as here](https://github.com/Art3m198/PHP-MySQL-Search-with-pagination)  
 
 ## Screenshots
 
