@@ -47,7 +47,7 @@
 		// Method to find all contacts in the database
 		public function find_all() {
 			// Return all 
-			return $this->all = $this->db->query('SELECT * FROM news ORDER BY added', PDO::FETCH_ASSOC);
+			return $this->all = $this->db->query('SELECT * FROM news ORDER BY added DESC', PDO::FETCH_ASSOC);
 		}
 		
 		// Method to find specific contact in the database

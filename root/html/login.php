@@ -91,7 +91,6 @@
 				                    <div class="panel-heading">
                   <ul class="nav nav-tabs">
                     <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
-                    <li> <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">Sign up</a></li>
                   </ul>
                     </div> 
 					<form class="form-signin" action="" method="post"><br>	
@@ -105,7 +104,7 @@
 						</div>
 						<input type="hidden" name="csrf_token" value="<?php echo htmlentities($csrf_token); ?>"/>
 						<div class="pt-15 text-center">
-							<button class="btn btn-success" name="submit" type="submit" value="submit">Войти</button>
+							<button class="btn btn-success" name="submit" type="submit" value="submit">Login</button>
 						</div>
 					</form>
 					
@@ -119,7 +118,6 @@
                     <li><a href="#" onClick="$('#loginbox').show(); $('#signupbox').hide()">Login</a></li>
                      <li class="active"><a href="#signup" data-toggle="tab">Sign up</a></li>
                   </ul>
-                            
                         </div>  
                         <div class="panel-body" >
                             <form id="signupform" class="form-horizontal" role="form">

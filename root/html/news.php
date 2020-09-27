@@ -113,7 +113,7 @@
 										<div class="form-group">
 					<label class="col-sm-2 control-label">Added</label>
 					<div class="col-sm-4">
-						<input type="text" class="form-control" name="last_name" placeholder="Ваш ник или псевдоним" required <?php if(isset($_POST["last_name"])){ echo "value=\"" . htmlentities($_POST["last_name"]) . "\""; }; ?>>
+						<input type="text" class="form-control" name="last_name" placeholder="Nickname" required <?php if(isset($_POST["last_name"])){ echo "value=\"" . htmlentities($_POST["last_name"]) . "\""; }; ?>>
 					</div></div><hr>
 					<input type="hidden" name="csrf_token" value="<?php echo htmlentities($csrf_token); ?>"/>
 									<div class="form-group">
@@ -142,7 +142,7 @@
 						<td><?php echo htmlentities($contact["contact_id"]); ?></td>
 						<td><?php echo preg_replace($pattern, $replacement, $contact["added"]); ?></td>
 						<td><?php echo htmlentities($contact["last_name"]); ?></td>
-						<td> <a href="<?php echo PAGELINK_NEWSDELETE; ?>?i=<?php echo urlencode($contact["contact_id"]); ?>" type="button" role="button" class="btn btn-danger">Удалить</a></td>
+						<td> <a href="<?php echo PAGELINK_NEWSDELETE; ?>?i=<?php echo urlencode($contact["contact_id"]); ?>" type="button" role="button" class="btn btn-danger">Delete</a></td>
 					</tr>
 <?php
 				// Closing the foreach loop once final item in $contacts has been displayed
