@@ -19,7 +19,7 @@
 						<li <?php if($page_name == PAGENAME_NEWS) echo 'class="active"'; ?>><a href="<?php echo PAGELINK_NEWS; ?>" class = "fa fa-bell" aria-hidden="true"><font color="#202020"><b> <?php echo PAGENAME_NEWS; ?></font></b></a></li>
 						<!-- <li><a href="/forum" target = "_blanc" class = "fa fa-vcard"><font color="#202020"><b> Форум</font></b></a></li> -->
 						<li <?php if($page_name == PAGENAME_USERS) echo 'class="active"'; ?>><a href="<?php echo PAGELINK_USERS; ?>"><i class="fa fa-users" aria-hidden="true"></i> <?php echo PAGENAME_USERS; ?></a></li>
-						<li <?php if($page_name == PAGENAME_LOGS) echo 'class="active"'; ?>><a href="<?php echo PAGELINK_LOGS; ?>"><i class="fa fa-list" aria-hidden="true"></i> <?php echo PAGENAME_LOGS; ?></a></li>
+						<li <?php if($page_name == PAGENAME_LOGS) echo 'class="active"'; ?>><a href="log.php"><i class="fa fa-list" aria-hidden="true"></i> <?php echo PAGENAME_LOGS; ?></a></li>
 						<li <?php if($page_name == PAGENAME_LOGOUT) echo 'class="active"'; ?>><a href="<?php echo PAGELINK_LOGOUT; ?>"><i class="fa fa-sign-out" aria-hidden="true"></i> <?php echo PAGENAME_LOGOUT; ?></a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
