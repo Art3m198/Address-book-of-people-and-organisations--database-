@@ -5,6 +5,8 @@ Address book of people and organisations (database)
 - Login, changing and adding data  
 - Search in the database, and the pagination 
 
+MySQL settings -> settings.local.inc.php  
+
 [Search as here](https://github.com/Art3m198/PHP-MySQL-Search-with-pagination)  
 
 ## Screenshots
